@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 
 export const TileContainer = styled.div`
-  padding: 10px;
-  border-radius: 5px;
-  display: inline-block;
+  display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  border-radius: 5px;
 
+  border: 1px solid gray;
   background-color: ${({state, label}) =>
     !label ? "transparent" : 
       state === "right-place" ?

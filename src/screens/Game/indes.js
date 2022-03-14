@@ -1,18 +1,17 @@
 import React from "react";
+import GameBoard from "../../components/GameBoard";
 import TopMenuElement from "../../components/TopMenu";
-import WordTile from "../../components/WordTile";
 
 
 export default function GameDashboard() {
   
-  const Alfabeto = ["A", "B", "C", "D"];
+  const Alphabet = ["A", "B", "C", "D", "A", "B", "C", "D"];
+
   return(
     <body>
       <TopMenuElement />
-      <WordTile state="" label={Alfabeto[0]} />
-      <WordTile state="" label={Alfabeto[1]} />
-      <WordTile state="" label={Alfabeto[2]} />
-      <WordTile state="" label={Alfabeto[3]} />
+      <GameBoard chances={6} letters={5} />
+
     </body>
   );
 };
