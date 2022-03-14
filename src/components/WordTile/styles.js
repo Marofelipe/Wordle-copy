@@ -14,9 +14,9 @@ export const TileContainer = styled.div`
   background-color: ${({state, label}) =>
     !label ? "transparent" : 
       state === "right-place" ?
-        "green" :  
+        "#6aaa64" :  
         state === "wrong-place" ?
-          "yellow" :
+          "#c9b458" :
           "gray"
   };
 

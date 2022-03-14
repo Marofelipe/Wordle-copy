@@ -3,9 +3,10 @@ import { TileContainerKeyboard } from "./styles";
 
 export default function Keyboard({...props}) 
 {
+    const { label } = props;
     return(
         <TileContainerKeyboard {...props}>
-            <div>Marquin que desgraça é label seu filho da p</div>
+            <div>{label}</div>
         </TileContainerKeyboard>
     )
 }

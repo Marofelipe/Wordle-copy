@@ -1,16 +1,23 @@
 import React from "react";
 import GameBoard from "../../components/GameBoard";
+import Keyboard from "../../components/Keyboard";
 import TopMenuElement from "../../components/TopMenu";
 
 
 export default function GameDashboard() {
-  
-  const Alphabet = ["A", "B", "C", "D", "A", "B", "C", "D"];
-
+  const gameStatus = [
+    {letters: ["B", "A", "I", "L", "E"] , status : ["right-place", "wrong", "wrong", "wrong", "wrong-place"]},
+    {letters: [] , status : []},
+    {letters: [] , status : []},
+    {letters: [] , status : []},
+    {letters: [] , status : []},
+    {letters: [] , status : []},
+  ]
   return(
     <body>
       <TopMenuElement />
-      <GameBoard chances={6} letters={5} />
+      <GameBoard chances={6} letters={5} gameStatus={gameStatus}/>
+      <Keyboard label="Marquin que desgraça é label seu filho da p"/>
     </body>
   );
 };

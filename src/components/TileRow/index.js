@@ -6,7 +6,7 @@ export default function RowTile({...props}){
   const {
     length,
     word,
-    state,
+    status,
   } = props;
 
   function renderEmptyTiles(length) {
@@ -18,8 +18,8 @@ export default function RowTile({...props}){
   }
   return(
     <Row>
-      {word ? 
-        word?.map((label, index) => <WordTile label={label} state={state[index]} />)
+      {word.length > 0 ? 
+        word?.map((label, index) => <WordTile label={label} state={status[index]} />)
         :
         renderEmptyTiles(length)
         }
