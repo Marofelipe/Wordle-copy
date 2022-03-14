@@ -19,7 +19,7 @@ export default function GameDashboard() {
     <body>
       <TopMenuElement />
       <GameBoard chances={6} letters={5} gameStatus={gameStatus} />
-      <Keyboard />
+      <Keyboard/>
     </body>
   );
 }
