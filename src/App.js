@@ -1,5 +1,5 @@
 import './App.css';
-import GameDashboard from './screens/Game/indes';
+import GameDashboard from './screens/Game';
 
 function App() {
   return (
